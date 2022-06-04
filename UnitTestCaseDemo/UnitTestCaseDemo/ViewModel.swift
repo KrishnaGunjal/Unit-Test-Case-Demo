@@ -14,10 +14,14 @@ protocol DataViewModelDelegate {
     func dataFetchError(error: DataError)
 }
 
-class ViewModel: NSObject {
+class ViewModel: ObservableObject {
     private var apiService: APIService!
     var dataViewModelDelegate: DataViewModelDelegate?
-    var alumData = [Album]()
+    @Published var alumData = [Album]()
+    
+    init(){
+        
+    }
     
     private var persistentDataList = [Album](){
         didSet {

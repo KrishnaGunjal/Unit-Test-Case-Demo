@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Album: Codable{
+struct Album: Codable, Hashable{
     var albumId: Int
     var id: Int
     var title: String
