@@ -19,6 +19,7 @@
 		7A9A254B284A804F003BBCE9 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9A254A284A804F003BBCE9 /* APIService.swift */; };
 		7A9A254D284A86D9003BBCE9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9A254C284A86D9003BBCE9 /* ViewModel.swift */; };
 		7AFE096F284B7DC0003204CB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7AFE096E284B7DC0003204CB /* Kingfisher */; };
+		7AFE0971284B87F8003204CB /* ApiResourceUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE0970284B87F8003204CB /* ApiResourceUnitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		7A9A2548284A7F32003BBCE9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7A9A254A284A804F003BBCE9 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		7A9A254C284A86D9003BBCE9 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		7AFE0970284B87F8003204CB /* ApiResourceUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResourceUnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				7A20A5C5284877C300D73E44 /* UnitTestCaseDemoTests.swift */,
+				7AFE0970284B87F8003204CB /* ApiResourceUnitTests.swift */,
 			);
 			path = UnitTestCaseDemoTests;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AFE0971284B87F8003204CB /* ApiResourceUnitTests.swift in Sources */,
 				7A20A5C6284877C300D73E44 /* UnitTestCaseDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
