@@ -30,7 +30,10 @@ class ViewModel: ObservableObject {
     }
     
     fileprivate func setData(){
-        self.alumData = persistentDataList
+        DispatchQueue.main.async {
+            self.alumData = self.persistentDataList
+        }
+        
         self.dataViewModelDelegate?.dataRefreshSuccess()
     }
     

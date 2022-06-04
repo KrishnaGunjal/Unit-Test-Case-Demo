@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ContentView: View {
     let items = Array(1...10).map({"Element \($0)"})
     let layout = [
         GridItem(.flexible(minimum: 100, maximum: 200),spacing: 12),
-        GridItem(.flexible(minimum: 100, maximum: 200))
+        GridItem(.flexible(minimum: 100, maximum: 200), alignment: .top)
     ]
     @ObservedObject var viewModel = ViewModel()
     
@@ -19,10 +20,12 @@ struct ContentView: View {
     var body: some View {
         ScrollView{
             LazyVGrid(columns: layout, content: {
-                ForEach(viewModel.alumData, id: \.self){ num in
-                    VStack(alignment: .leading){
+                ForEach(viewModel.alumData, id: \.self){ data in
+                    VStack(alignment: .leading, spacing: 4){
                         Spacer()
-                        Text("accusamus beatae ad facilis cum similique qui sunt")
+                        KFImage(URL(string: data.thumbnailUrl))
+                        
+                        Text(data.title)
                             .font(.system(size: 12, weight: .semibold))
                     }
                     .padding()
